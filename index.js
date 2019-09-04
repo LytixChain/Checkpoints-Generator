@@ -10,12 +10,12 @@ var currentblock = 378221;
 var fBreadwallet = false;
 var fisPIVXFork = true;
 var fisEnergiFork = false;
-var totaltx = 195853;//get this from the tx=... number in the SetBestChain debug.log lines
+var totaltx = 713821;//get this from the tx=... number in the SetBestChain debug.log lines
 var i = 0;
 //Blockbook only requirements,genesis block is not recorded in blockbook.
-var genesishash = "0000001d161ffa384283efdba6d25be3477b60ae36c9c52d49d4edbf9a4cf35b";
+var genesishash = "0000028b94db22c97211ba15866bc2c9bc0daa7e9ac410a6c9660d8be19915c7";
 var genesisbits = "0x1e0ffff0"
-var genesistime = 1559435552;
+var genesistime = 1544199012;
 function generateCheckpoints(blockdelay, blockcountcurr) {
     if (i +1<= blockcountcurr) {
         if (i + blockdelay > blockcountcurr || i > blockcountcurr) 
